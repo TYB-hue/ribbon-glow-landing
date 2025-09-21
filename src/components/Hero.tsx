@@ -17,43 +17,47 @@ const Hero = () => {
           <span className="text-muted-foreground">Next-generation development platform</span>
         </div>
 
-        {/* Main headline - Improved mobile responsiveness */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight tracking-tight">
-          <span className="gradient-text block">Code less.</span>
-          <span className="text-foreground block">Build more.</span>
+        {/* Main headline - Bold, minimalist, single line */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 leading-tight tracking-tight">
+          <span className="gradient-text">Code less. Build more.</span>
         </h1>
 
-        {/* Subtitle */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
-          Transform your ideas into reality with our intuitive platform that accelerates development 
-          and amplifies creativity through intelligent automation.
+        {/* Subtitle - More minimalist */}
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground/80 mb-12 sm:mb-16 max-w-3xl mx-auto leading-relaxed px-4 font-light">
+          Transform your ideas into reality with intelligent automation.
         </p>
 
-        {/* CTA buttons - Enhanced mobile layout */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
-          <Button variant="hero" size="xl" className="group w-full sm:w-auto min-w-[200px]">
-            Start Building Now
-            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button variant="outline" size="xl" className="floating-card border-border/50 hover:border-accent/50 w-full sm:w-auto min-w-[160px]">
-            Watch Demo
-          </Button>
+        {/* Central input bar - Like in reference image */}
+        <div className="mb-16 sm:mb-20 lg:mb-24 px-4 max-w-4xl mx-auto">
+          <div className="hero-input-bar rounded-2xl p-1">
+            <div className="flex items-center gap-3 sm:gap-4 p-4 sm:p-6">
+              <div className="flex-1">
+                <input 
+                  type="text" 
+                  placeholder="Describe the app you want to build..."
+                  className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/60 text-base sm:text-lg focus:outline-none font-light"
+                />
+              </div>
+              <Button variant="hero" size="lg" className="shrink-0 group">
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </div>
         </div>
 
-        {/* Stats or social proof - Better mobile grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-center max-w-4xl mx-auto px-4">
-          <div className="floating-card rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">
-            <div className="text-2xl sm:text-3xl font-bold gradient-text mb-1 sm:mb-2">10x</div>
-            <div className="text-muted-foreground text-sm sm:text-base">Faster Development</div>
+        {/* Stats section - Pushed down more for mobile spacing */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 text-center max-w-5xl mx-auto px-4">
+          <div className="floating-card rounded-xl p-6 sm:p-8 transition-transform hover:scale-105">
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-black gradient-text mb-2 sm:mb-3">10x</div>
+            <div className="text-muted-foreground/80 text-sm sm:text-base font-light">Faster Development</div>
           </div>
-          <div className="floating-card rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">
-            <div className="text-2xl sm:text-3xl font-bold gradient-text mb-1 sm:mb-2">50k+</div>
-            <div className="text-muted-foreground text-sm sm:text-base">Developers</div>
+          <div className="floating-card rounded-xl p-6 sm:p-8 transition-transform hover:scale-105">
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-black gradient-text mb-2 sm:mb-3">50k+</div>
+            <div className="text-muted-foreground/80 text-sm sm:text-base font-light">Developers</div>
           </div>
-          <div className="floating-card rounded-lg p-4 sm:p-6 transition-transform hover:scale-105">
-            <div className="text-2xl sm:text-3xl font-bold gradient-text mb-1 sm:mb-2">99.9%</div>
-            <div className="text-muted-foreground text-sm sm:text-base">Uptime</div>
+          <div className="floating-card rounded-xl p-6 sm:p-8 transition-transform hover:scale-105">
+            <div className="text-3xl sm:text-4xl lg:text-5xl font-black gradient-text mb-2 sm:mb-3">99.9%</div>
+            <div className="text-muted-foreground/80 text-sm sm:text-base font-light">Uptime</div>
           </div>
         </div>
       </div>
